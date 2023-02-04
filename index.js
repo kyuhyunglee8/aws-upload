@@ -31,7 +31,7 @@ exports.handler = async (event, context, callback) => {
       .putObject({
         Bucket,
         Key: `thumb/${newFilename}`,
-        ContentType: 'image',
+        ContentType: 'image/jpeg',
         Body: resizedImage,
       })
       .promise();
